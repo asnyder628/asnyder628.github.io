@@ -1,8 +1,211 @@
-h1 { 
-    color: #2f4f3e;
-    font-size: 1.75em;
+/* ======================
+   CSS Reset
+====================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-p {
-    color: #2b2b2b;
-    font-size: 1.25em;
+
+/* ======================
+   General Page Styles
+====================== */
+
+body {
+    background-color: #F6EEDC; /* Parchment Cream */
+    color: #2F4F3E; /* Forest Green */
+    font-family: Lato, sans-serif;
+    line-height: 1.6;
+}
+
+/* ======================
+   Headings
+====================== */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    color: #2F4F3E;
+}
+
+/* ======================
+   Hero Section
+====================== */
+.hero {
+    background-image: url("HeroImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    Position: relative;
+
+    padding: 2rem;
+}
+
+/* ======================
+   Hero Text
+====================== */
+
+.hero-text {
+    max-width: 600px;
+    background-color:#2b2b2b88; /* Dark Charcoal */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f6eedc; /* Parchment Cream */
+
+}
+
+.introduction {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+     color: #f6eedc; /* Parchment Cream */
+}
+
+.hero-button {
+        display: block;
+    width: fit-content;
+    margin: 1.5rem auto 0 auto;
+    Padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+
+    background-color: #C9A227; /* Antique Gold */
+    color: #2F4F3E; /* Forest Green */
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #b6921f;
+}
+
+.ai-statement {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #f6eedc; /* Parchment Cream */
+}
+/* ======================
+Image Credit
+====================== */
+.image-credit {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    font-size: 0.8rem;
+    color: #F6EEDC;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}
+
+/* ======================
+   Focus Section
+====================== */
+.focus {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.focus h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #2F4F3E;
+    margin-bottom: 3rem;
+}
+
+.focus h2::before,
+.focus h2::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #C9A227;
+
+}
+
+.focus-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.focus-card {
+    background-color: #F6EEDC;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.focus-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.focus-button {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 0.75rem 1.5rem;
+
+    background-color: #C9A227; /* Antique Gold */
+    color: #2F4F3E; /* Forest Green */
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+}
+.focus-button:hover {
+    background-color: #b6921f;
+}
+/* ======================
+   Footer
+====================== */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #2F4F3E; /* Forest Green */
+    color: #F6EEDC; /* Parchment Cream */
+}
+/* ======================
+   Tablet and Desktop
+====================== */
+
+@media (min-width: 768px) {
+    .hero {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 8rem;
+}
+}
+@media (min-width: 768px) {
+    .focus-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .focus-card {
+        flex: 1;
+        max-width: 300px;
+    }
 }
