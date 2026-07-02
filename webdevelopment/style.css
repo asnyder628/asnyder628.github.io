@@ -1,5 +1,17 @@
 /* ======================
-   CSS Reset
+   Footer
+====================== */
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #2F4F3E; /* Forest Green */
+    color: #F6EEDC; /* Parchment Cream */
+}
+
+/* ======================
+   CSS
 ====================== */
 
 * {
@@ -9,7 +21,7 @@
 }
 
 /* ======================
-   General Page Styles
+   General Styles
 ====================== */
 
 body {
@@ -24,7 +36,7 @@ p {
 }
 
 /* ======================
-   Headings
+   Headings Home Page Styles
 ====================== */
 
 h1,
@@ -38,7 +50,7 @@ h1 {
     font-size: 3rem;
 }
 /* ======================
-   Hero Section
+   Hero Section Home Page Styles
 ====================== */
 .hero {
     background-image: url("HeroImage.png");
@@ -52,12 +64,11 @@ h1 {
     align-items: center;
     text-align: center;
     Position: relative;
-
     padding: 2rem;
 }
 
 /* ======================
-   Hero Text
+   Hero Text Home Page Styles
 ====================== */
 
 .hero-text {
@@ -107,7 +118,7 @@ h1 {
     color: #f6eedc; /* Parchment Cream */
 }
 /* ======================
-Image Credit
+Image Credit Home Page Styles
 ====================== */
 .image-credit {
     position: absolute;
@@ -123,7 +134,7 @@ Image Credit
 }
 
 /* ======================
-   Focus Section
+   Focus Section Home Page Styles
 ====================== */
 .focus {
     padding: 4rem 2rem;
@@ -182,18 +193,7 @@ Image Credit
     background-color: #b6921f;
 }
 /* ======================
-   Footer
-====================== */
-
-footer {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
-    background-color: #2F4F3E; /* Forest Green */
-    color: #F6EEDC; /* Parchment Cream */
-}
-/* ======================
-   Tablet and Desktop
+   Tablet and Phone Home Page Styles
 ====================== */
 
 @media (min-width: 768px) {
@@ -214,5 +214,152 @@ footer {
     .focus-card {
         flex: 1;
         max-width: 300px;
+    }
+}
+/* ======================
+   Headings About Page Styles
+====================== */
+h1.about-me {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* ======================
+   About Page Styles
+====================== */
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+/* ======================
+   Education About Page Styles
+====================== */
+.education {
+    padding: 0;
+    text-align: center;
+}
+.education h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #2F4F3E;
+    margin-bottom: 3rem;
+}
+
+.education h2::before,
+.education h2::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #C9A227;
+
+}
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.education-card {
+    background-color: #F6EEDC;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.education-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* ======================
+   Media About Page Styles
+====================== */
+.media {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.media h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #2F4F3E;
+    margin-bottom: 3rem;
+}
+
+.media h2::before,
+.media h2::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #C9A227;
+
+}
+.media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.media-card {
+    background-color: #F6EEDC;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: 2px solid #2F4F3E;
+    background-color: #f6eedc;
+    color: #2F4F3E;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.resume-link:hover {
+    background-color: #c9a227;
+    color: #2F4F3E;
+}
+/* ======================
+   Tablet and Phone About Page Styles
+====================== */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-image,
+    .about-text {
+        flex: 1;
+    }
+
+    .education-container,
+    .media-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .education-card,
+    .media-card {
+        flex: 1;
+        max-width: 500px;
     }
 }
