@@ -1,0 +1,135 @@
+/* ===== General Page Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6EEDC; /* Parchment Cream */
+    color: #2F4F3E; /* Forest Green */
+}
+
+/* ===== Header and Navigation Layout ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0%;
+    background-color: #2F4F3E; /* Forest Green */
+}
+
+.nav-container {
+    background-color: #2F4F3E;
+    padding: 0;
+    width: 100%;
+    margin: 0.2rem 0;
+}
+
+nav {
+    background-color: #2F4F3E;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Logo Styles ===== */
+.logo-image {
+    width: 200px;
+    height: auto;
+}
+
+.logo a {
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    padding: 4px 8px;
+}
+
+.logo a:hover {
+    border-color: #FFD700; /* Gold */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 1rem;
+    font-size: 1.2rem   ;
+    justify-content: flex-end;
+}
+
+/* ===== Navigation Link Styles ===== */
+nav a {
+    text-decoration: none;
+    color: #F6EEDC; /* Parchment Cream */
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.2rem   ;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold */
+    border-bottom-color: #FFD700;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+/* ===== Mobile Hamburger Menu ===== */
+.hamburger {
+    display: none;
+}
+
+/* ===== Mobile Navigation Styles ===== */
+@media screen and (max-width: 767px) {
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        color: #F6EEDC;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    #menu-toggle:checked ~ .nav-list-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2F4F3E;
+        margin: 0;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        position: relative;
+        flex-wrap: wrap;
+    }
+}
