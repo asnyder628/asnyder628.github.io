@@ -12,8 +12,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0%;
-    background-color: #2F4F3E; /* Forest Green */
+    padding: 0;
+    background-color: #2F4F3E;
+    position: relative;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -91,6 +93,55 @@ nav a:hover {
     display: none;
 }
 
+/* ===== Portfolio Dropdown Menu ===== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+
+    width: 320px;              /* Fixed width */
+    background-color: #2F4F3E;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin: 0;
+
+    flex-direction: column;
+    align-items: stretch;      /* Make items stretch full width */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: #F6EEDC;
+    border-bottom: none;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.dropdown-menu a:hover {
+    background-color: #C9A227;
+    color: #2F4F3E;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
 
 /* ===== Mobile Hamburger Menu ===== */
 .hamburger {
@@ -110,7 +161,7 @@ nav a:hover {
     nav ul {
         display: none;
     }
-    
+
     #menu-toggle:checked ~ .nav-list-2 {
         display: flex;
         flex-direction: column;
@@ -131,5 +182,38 @@ nav a:hover {
     nav {
         position: relative;
         flex-wrap: wrap;
+    }
+
+    /* ===== Mobile Dropdown Menu ===== */
+    .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .dropdown-menu {
+     position: static;
+    display: none;
+    width: 100%;
+    box-shadow: none;
+    background-color: #2F4F3E;
+    padding: 0;
+    margin: 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .dropdown-menu li {
+    width: 100%;
+    text-align: center;
+    }
+
+    .dropdown-menu a {
+    padding: 0.75rem 0;
+    font-size: 1rem;
     }
 }

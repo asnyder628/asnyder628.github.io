@@ -3,22 +3,71 @@
   Name: Allison Snyder
   Date: June 15, 2026
   Course: Introduction to Web Design and Development
-  Description: Reusable HTML boilerplate template.
+  Description: Portfolio Page for Allison Snyder Portfolio.
   -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Starter Template</title>
+    <title>My Portfolio</title>
      <!-- Link to external CSS for styling -->
+      <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
  <!-- Logo and navigation will go here -->
+  <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Allison Snyder Logo" class="logo-image">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+
+             <label for="menu-toggle" class="hamburger">
+                     &#9776;
+            </label>
+            
+<!-- Navigation with Portfolio Dropdown Menu -->
+            <ul class="nav-list-2">
+                 <li><a href="about.html">About</a></li>
+                 <li class="dropdown"> <a href="portfolio.html">Projects</a>
+                     <ul class="dropdown-menu">
+                        <li><a href="portfolio.html#renaissance">Renaissance Gallery</a></li>
+                        <li><a href="portfolio.html#winter">Winter Wonderland</a></li>
+                        <li><a href="portfolio.html#assessment">Immersive Assessment</a></li>
+                        <li><a href="portfolio.html#reading">Reading Intervention</a></li>
+                     </ul>
+                </li>
+                 <li><a href="Reflection.html">Reflection</a></li>
+                 <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<h1>Hello, world!</h1>
-<!-- Content will go here -->
+<main>
+    <h1 class="portfolio-title">Portfolio</h1>
+    <!-- Portfolio section -->
+
+        <section id="renaissance">
+            <h2>Renaissance Virtual Gallery</h2>
+        </section>
+
+        <section id="winter">
+             <h2>Winter Wonderland Learning Experience</h2>
+        </section>
+
+        <section id="assessment">
+              <h2>Immersive Assessment Conference Proposal</h2>
+        </section>
+
+        <section id="reading">
+            <h2>Reading Intervention Curriculum</h2>
+        </section>
+</main>
  <footer>
     <!-- Footer contains creator information -->
     <p>Allison Snyder | June 15, 2026</p>

@@ -388,3 +388,123 @@ h1.about-me {
         max-width: 500px;
     }
 }
+/* ===== Teaching Philosophy Page Styles ===== */
+
+.philosophy-section {
+    background-color: #F6EEDC;
+    color: #2F4F3E;
+    padding: 2rem;
+}
+
+.philosophy-section h1 {
+    font-family: Georgia, serif;
+    color: #2F4F3E;
+    text-align: center;
+}
+
+.philosophy-text-box {
+    max-width: 1000px;
+    margin: 2rem auto 3rem auto;
+    padding: 2rem;
+}
+
+.philosophy-text-box {
+    max-width: 1000px;
+    margin: 2rem auto 3rem auto;
+    padding: 2rem;
+    border: 2px solid #2F4F3E;
+    border-radius: 8px;
+}
+
+.philosophy-text-box p:first-of-type::first-letter {
+    color: #C9A227;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.philosophy-text-box p:nth-of-type(even) {
+    text-indent: 2rem;
+}
+
+.ai-statement {
+    font-style: italic;
+}
+
+/* ===== Philosophy Quote Banner ===== */
+
+.philosophy-banner {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    max-width: 1000px;
+    min-height: 180px;
+     margin: 2rem auto 3rem auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    border-radius: 8px;
+}
+
+.philosophy-banner h2 {
+    font-family: Georgia, serif;
+    color: #F6EEDC;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.philosophy-banner p {
+    font-family: Lato, Arial, sans-serif;
+    color: #C9A227;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0;
+}
+
+
+/* ===== Philosophy in Action Section ===== */
+
+.philosophy-action {
+    background-color: #F6EEDC;
+    border: 2px solid #2F4F3E;
+    max-width: 700px;
+    margin: 1rem auto 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.philosophy-action h2 {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: bold;
+    color: #2F4F3E;
+    margin-bottom: 1rem;
+}
+
+.project-button {
+    display: inline-block;
+    background-color: #C9A227;
+    color: #2F4F3E;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+}
+
+.project-button:hover {
+    background-color: #2F4F3E;
+    color: #F6EEDC;
+}

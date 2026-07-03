@@ -3,7 +3,7 @@
   Name: Allison Snyder
   Date: June 15, 2026
   Course: Introduction to Web Design and Development
-  Description: Reusable HTML boilerplate template.
+  Description: Home Page for Allison Snyder Portfolio.
   -->
 <html lang="en">
 <head>
@@ -11,11 +11,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Allison Snyder Portfolio</title>
      <!-- Link to external CSS for styling -->
+      <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <!--Navigation will do here -->
+    <header>
+ <!-- Logo and navigation will go here -->
+  <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Allison Snyder Logo" class="logo-image">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+
+             <label for="menu-toggle" class="hamburger">
+                     &#9776;
+            </label>
+            
+<!-- Navigation with Portfolio Dropdown Menu -->
+            <ul class="nav-list-2">
+                 <li><a href="about.html">About</a></li>
+                 <li class="dropdown"> <a href="portfolio.html">Projects</a>
+                     <ul class="dropdown-menu">
+                        <li><a href="portfolio.html#renaissance">Renaissance Gallery</a></li>
+                        <li><a href="portfolio.html#winter">Winter Wonderland</a></li>
+                        <li><a href="portfolio.html#assessment">Immersive Assessment</a></li>
+                        <li><a href="portfolio.html#reading">Reading Intervention</a></li>
+                     </ul>
+                </li>
+                 <li><a href="Reflection.html">Reflection</a></li>
+                 <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
     <!--Hero Section -->
@@ -75,6 +106,8 @@
             <p>Designing for all learners in mind.</p>
         </article>
     </div>
+
+    <div class="focus-button-container">
        <a href="about.html" class="focus-button">
         Learn More About Me →
     </a>

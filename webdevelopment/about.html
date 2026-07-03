@@ -3,29 +3,60 @@
   Name: Allison Snyder
   Date: June 15, 2026
   Course: Introduction to Web Design and Development
-  Description: Reusable HTML boilerplate template.
+  Description: About Page for Allison Snyder Portfolio.
   -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Allison Snyder Portfolio</title>
-     <!-- Link to external CSS for styling -->
+          <!-- Link to external CSS for styling -->
+      <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <!-- Website title -->
-    <h1 class="about-me">About Me</h1>
+    <header>
+ <!-- Logo and navigation will go here -->
+  <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Allison Snyder Logo" class="logo-image">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle">
+
+             <label for="menu-toggle" class="hamburger">
+                     &#9776;
+            </label>
+            
+<!-- Navigation with Portfolio Dropdown Menu -->
+            <ul class="nav-list-2">
+                 <li><a href="about.html">About</a></li>
+                 <li class="dropdown"> <a href="portfolio.html">Projects</a>
+                     <ul class="dropdown-menu">
+                        <li><a href="portfolio.html#renaissance">Renaissance Gallery</a></li>
+                        <li><a href="portfolio.html#winter">Winter Wonderland</a></li>
+                        <li><a href="portfolio.html#assessment">Immersive Assessment</a></li>
+                        <li><a href="portfolio.html#reading">Reading Intervention</a></li>
+                     </ul>
+                </li>
+                 <li><a href="Reflection.html">Reflection</a></li>
+                 <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
+      <h1 class="about-me">About Me</h1>
     <!-- About section -->
     <section class="about-container">
     <div class="about-image">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="Reflection.html">Reflection</a></li>
             <li><a href="contacts.html">Contact</a></li>
         </ul>
     </div>
@@ -97,14 +128,16 @@
         <h2>More About Me</h2>
         <div class="media-container">
          <article class="media-card">
-                <p> Video Goes Here</p>
-            </article>
+            <h3>Introduction Video</h3>
+            <p>Video Goes Here</p>
+        </article>
 
-            <article class="media-card">
-           <a class="resume-link" href="SnyderResume.pdf" target="_blank">
-            Download My Resume (PDF)
-        </a>
-           </article>
+        <article class="media-card">
+            <h3>Resume</h3>
+            <a class="resume-link" href="SnyderResume.pdf" target="_blank">
+             Download My Resume (PDF)
+             </a>
+        </article>
         </div>
     </section>
 </main>
