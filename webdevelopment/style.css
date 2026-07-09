@@ -441,6 +441,7 @@ h1.about-me {
     .education-container,
     .media,
     h1.about-me,
+    .focus-container,
     .ai-statement-2,
     .focus {
         display: none;
@@ -466,13 +467,6 @@ h1.about-me {
         color: black;
         font-size: 11pt;
         margin-bottom: 0.5rem;
-    }
-
-    .focus {
-        display: block;
-        padding: 0;
-        margin-top: 1rem;
-        text-align: left;
     }
 
     .education h2 {
