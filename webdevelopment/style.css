@@ -441,16 +441,9 @@ h1.about-me {
     .print-focus,
     .education-container,
     .media,
-    .ai-statement-2 {
-        display: none;
-    }
-
+    .ai-statement-2,
     h1.about-me {
-        display: block;
-        color: black;
-        font-size: 20pt;
-        margin-bottom: 0.5rem;
-        text-align: left;
+        display: none;
     }
 
     .about-container {
@@ -461,9 +454,12 @@ h1.about-me {
     }
 
     .about-text h2 {
-        display: none;
+        display: block;
+        color: black;
+        font-size: 20pt;
+        margin-bottom: 0.5rem;
+        text-align: left;
     }
-
     .about-text p {
         display: block;
         color: black;
