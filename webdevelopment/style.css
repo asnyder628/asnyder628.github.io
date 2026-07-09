@@ -416,8 +416,7 @@ h1.about-me {
     }
 }
 /* ======================
-
-/* Print Styles - About Page
+   Print Styles - About Page
 ====================== */
 
 @media print {
@@ -438,13 +437,20 @@ h1.about-me {
     nav,
     .about-image,
     .headshot,
+    .focus,
+    .print-focus,
     .education-container,
     .media,
-    h1.about-me,
-    .focus-container,
-    .ai-statement-2,
-    .focus {
+    .ai-statement-2 {
         display: none;
+    }
+
+    h1.about-me {
+        display: block;
+        color: black;
+        font-size: 20pt;
+        margin-bottom: 0.5rem;
+        text-align: left;
     }
 
     .about-container {
@@ -455,11 +461,7 @@ h1.about-me {
     }
 
     .about-text h2 {
-        display: block;
-        color: black;
-        font-size: 14pt;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        display: none;
     }
 
     .about-text p {
@@ -467,6 +469,13 @@ h1.about-me {
         color: black;
         font-size: 11pt;
         margin-bottom: 0.5rem;
+    }
+
+    .education {
+        display: block;
+        padding: 0;
+        margin-top: 1rem;
+        text-align: left;
     }
 
     .education h2 {
@@ -478,14 +487,11 @@ h1.about-me {
         text-align: left;
     }
 
-    .focus h2::before,
-    .focus h2::after,
     .education h2::before,
     .education h2::after {
         display: none;
     }
 
-    .print-focus,
     .print-education {
         display: block;
         color: black;
@@ -494,17 +500,9 @@ h1.about-me {
         padding-left: 1rem;
     }
 
-    .print-focus li,
     .print-education li {
         color: black;
         margin-bottom: 0.35rem;
-    }
-
-    .education {
-        display: block;
-        padding: 0;
-        margin-top: 1rem;
-        text-align: left;
     }
 
     footer {
@@ -522,7 +520,6 @@ h1.about-me {
         color: black;
         margin-top: 0.5rem;
     }
-
 }
 /* ===== Teaching Philosophy Page Styles ===== */
 
