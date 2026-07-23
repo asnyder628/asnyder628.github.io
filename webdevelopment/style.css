@@ -398,11 +398,35 @@ Image Credit Home Page Styles
 /* ======================
    Headings About Page Styles
 ====================== */
+/* Custom font from Google Fonts applied to site */
+
+h1.about-me,
+.about-text h2,
+.education h2,
+.media h2 {
+    font-family: "Bona Nova", serif;
+}
+
+/* Custom styles for all <h1> elements */
+
 h1.about-me {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(43, 43, 43, 0.3);
 }
+
+/* Custom styles for About page <h2> elements */
+
+.about-text h2 {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    text-decoration-color: #C9A227;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+h1
 /* ======================
    About Page Styles
 ====================== */
