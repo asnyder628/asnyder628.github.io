@@ -3,7 +3,31 @@ Name: Allison Snyder
 Date: July 16, 2026
 Course: Introduction to Web Design and Development
 Description: Styles for the responsive Allison Snyder portfolio website.
-*/
+
+/* ======================
+   CSS
+====================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================
+   General Styles
+====================== */
+
+body {
+    background-color: #F6EEDC;
+    color: #111D17;
+    font-family: Lato, sans-serif;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1rem;
+}
 
 /* ======================
    Footer Styles
@@ -204,30 +228,6 @@ footer li {
     .contact-info li {
         justify-content: center;
     }
-}
-/* ======================
-   CSS
-====================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ======================
-   General Styles
-====================== */
-
-body {
-    background-color: #F6EEDC;
-    color: #111D17;
-    font-family: Lato, sans-serif;
-    line-height: 1.6;
-}
-
-p {
-    font-size: 1rem;
 }
 
 /* ======================
