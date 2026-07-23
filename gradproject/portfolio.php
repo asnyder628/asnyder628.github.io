@@ -13,7 +13,7 @@ immersive learning, accessibility, and educational technology projects.
     <title>My Portfolio</title>
      <!-- Link to external CSS for styling -->
       <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="shortcut icon" href="FooterIcons/favicon.ico" type="image/x-icon">
 </head>
 <body>
