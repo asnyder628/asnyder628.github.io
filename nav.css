@@ -1,0 +1,192 @@
+/*
+Name: Allison Snyder
+Date: July 23, 2026
+Course: Introduction to Web Design and Development
+Description: Navigation for the responsive Allison Snyder portfolio website.
+*/
+/* ===== Header and Navigation Layout ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #111D17;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-container {
+    background-color: #111D17;
+    padding: 0;
+    width: 100%;
+    margin: 0.2rem 0;
+}
+
+nav {
+    background-color: #111D17;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Logo Styles ===== */
+.logo-image {
+    width: 200px;
+    height: auto;
+}
+
+.logo a {
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    padding: 4px 8px;
+}
+
+.logo a:hover {
+    border-color: #FFD700; /* Gold */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 1rem;
+    font-size: 1.2rem   ;
+    justify-content: flex-end;
+}
+
+/* ===== Navigation Link Styles ===== */
+nav a {
+    text-decoration: none;
+    color: #F6EEDC; /* Parchment Cream */
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.2rem   ;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold */
+    border-bottom-color: #FFD700;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* ===== Portfolio Dropdown Menu ===== */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+
+    width: 320px;              /* Fixed width */
+    background-color: #111D17;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin: 0;
+
+    flex-direction: column;
+    align-items: stretch;      /* Make items stretch full width */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: #F6EEDC;
+    border-bottom: none;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.dropdown-menu a:hover {
+    background-color: #C9A227;
+    color: #111D17;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* ===== Mobile Hamburger Menu ===== */
+.hamburger {
+    display: none;
+}
+
+/* ===== Mobile Navigation Styles ===== */
+
+@media screen and (max-width: 767px) {
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        color: #F6EEDC;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .nav-list-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111D17;
+        margin: 0;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    /* Keep the dropdown choices hidden on mobile */
+
+    .dropdown-menu,
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu {
+        display: none;
+    }
+}
