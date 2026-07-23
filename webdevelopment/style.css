@@ -10,12 +10,20 @@ Description: Styles for the responsive Allison Snyder portfolio website.
 ====================== */
 
 footer {
-    background-image: url("Background.png");
+    background-color: #111D17;
+
+    background-image:
+        linear-gradient(
+            rgba(17, 29, 23, 0.88),
+            rgba(17, 29, 23, 0.88)
+        ),
+        url("Background.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    color: #111D17;
+    color: #F6EEDC;
     margin-top: 3rem;
     padding: 3rem 2rem 1.5rem;
 }
