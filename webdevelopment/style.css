@@ -41,6 +41,17 @@ footer {
    text-align: center;
 }
 
+/* Footer Contact Icon Animation */
+
+.contact-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-info li:hover .contact-icon {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 8px #C9A227);
+}
+
 /* Remove bullets from all footer lists */
 
 .social-links,
