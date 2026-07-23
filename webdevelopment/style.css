@@ -49,6 +49,14 @@ footer {
    text-align: center;
 }
 
+footer h2,
+footer p,
+footer a,
+footer span,
+footer li {
+    background-color: transparent;
+}
+
 /* Footer Contact Icon Animation */
 
 .contact-icon {
