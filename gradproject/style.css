@@ -3,7 +3,31 @@ Name: Allison Snyder
 Date: July 16, 2026
 Course: Introduction to Web Design and Development
 Description: Styles for the responsive Allison Snyder portfolio website.
-*/
+
+/* ======================
+   CSS
+====================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================
+   General Styles
+====================== */
+
+body {
+    background-color: #F6EEDC;
+    color: #111D17;
+    font-family: Lato, sans-serif;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1rem;
+}
 
 /* ======================
    Footer Styles
@@ -17,13 +41,13 @@ footer {
             rgba(17, 29, 23, 0.88),
             rgba(17, 29, 23, 0.88)
         ),
-        url("home/Background.png");
+        url("Background.png");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    color: red;
+    color: #F6EEDC;
     margin-top: 3rem;
     padding: 3rem 2rem 1.5rem;
 }
@@ -172,10 +196,12 @@ footer li {
     max-width: 1100px;
     margin: 2rem auto 0;
     padding-top: 1rem;
+
     border-top: 1px solid rgba(246, 238, 220, 0.4);
-    text-align: center;
+
+    color: #F6EEDC;
     font-size: 0.9rem;
-    color: red !important;
+    text-align: center;
 }
 
 /* ======================
@@ -203,30 +229,6 @@ footer li {
         justify-content: center;
     }
 }
-/* ======================
-   CSS
-====================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ======================
-   General Styles
-====================== */
-
-body {
-    background-color: #F6EEDC;
-    color: #111D17;
-    font-family: Lato, sans-serif;
-    line-height: 1.6;
-}
-
-p {
-    font-size: 1rem;
-}
 
 /* ======================
    Headings Home Page Styles
@@ -246,7 +248,7 @@ h1 {
    Hero Section Home Page Styles
 ====================== */
 .hero {
-    background-image: url("Home/HeroImage.png");
+    background-image: url("HeroImage.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -783,7 +785,7 @@ h1
 .philosophy-banner {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url("Home/Background.png");
+        url("Background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1117,7 +1119,7 @@ h1
             rgba(17, 29, 23, 0.75),
             rgba(17, 29, 23, 0.75)
         ),
-        url("Home/Background.png");
+        url("Background.png");
 
     background-repeat: no-repeat;
     background-position: center;
