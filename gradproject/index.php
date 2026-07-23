@@ -12,7 +12,7 @@
     <title>Home | Allison Snyder Portfolio</title>
      <!-- Link to external CSS for styling -->
       <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="shortcut icon" href="FooterIcons/favicon.ico" type="image/x-icon" >
 </head>
 <body>
@@ -49,7 +49,7 @@
     <div class="focus-container">
 
         <article class="focus-card">
-            <img src="BrowserIcon.png"
+            <img src="Home/BrowserIcon.png"
                  alt="Browser window icon representing learning design">
 
             <h3>Learning Design</h3>
@@ -58,7 +58,7 @@
         </article>
 
         <article class="focus-card">
-            <img src="GamingIcon.png"
+            <img src="Home/GamingIcon.png"
                  alt="Game controller icon representing game based learning">
 
             <h3>Game Based Learning</h3>
@@ -67,7 +67,7 @@
         </article>
 
         <article class="focus-card">
-            <img src="AccessIcon.png"
+            <img src="Home/AccessIcon.png"
                  alt="Accessibility icon representing designing for all learners">
 
             <h3>Accessibility</h3>

@@ -5,7 +5,7 @@
             <div class="logo">
                 <a href="index.php">
                     <img
-                        src="logo.png"
+                        src="Home/logo.png"
                         alt="Allison Snyder Logo"
                         class="logo-image">
                 </a>

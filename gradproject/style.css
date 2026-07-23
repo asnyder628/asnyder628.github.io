@@ -17,7 +17,7 @@ footer {
             rgba(17, 29, 23, 0.88),
             rgba(17, 29, 23, 0.88)
         ),
-        url("Background.png");
+        url("home/Background.png");
 
     background-size: cover;
     background-position: center;
@@ -246,7 +246,7 @@ h1 {
    Hero Section Home Page Styles
 ====================== */
 .hero {
-    background-image: url("HeroImage.png");
+    background-image: url("Home/HeroImage.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -783,7 +783,7 @@ h1
 .philosophy-banner {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url("Background.png");
+        url("Home/Background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1117,7 +1117,7 @@ h1
             rgba(17, 29, 23, 0.75),
             rgba(17, 29, 23, 0.75)
         ),
-        url("Background.png");
+        url("Home/Background.png");
 
     background-repeat: no-repeat;
     background-position: center;

@@ -17,7 +17,7 @@
                 </li>
 
                 <li>
-                    <a href="Resume.pdf" target="_blank">
+    				<a href="Home/SnyderResume.pdf" target="_blank">
                         <img
                             src="FooterIcons/Resume.png"
                             alt="View Allison Snyder's resume"

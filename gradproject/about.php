@@ -26,7 +26,7 @@
     <!-- About section -->
     <section class="about-container">
     <div class="about-image">
-        <img src="AllisonSnyderHeadshot.png" alt="Headshot of Allison Snyder" class="headshot">
+        <img src="Home/AllisonSnyderHeadshot.png" alt="Headshot of Allison Snyder" class="headshot">
     </div>
 
     <div class="about-text">
@@ -43,7 +43,7 @@
     <div class="focus-container">
 
         <article class="focus-card">
-            <img src="BrowserIconBold.png"
+            <img src="Home/BrowserIconBold.png"
                  alt="Browser window icon representing learning design">
 
             <h3>Learning Design</h3>
@@ -52,7 +52,7 @@
         </article>
 
         <article class="focus-card">
-            <img src="GamingIconBold.png"
+            <img src="Home/GamingIconBold.png"
                  alt="Game controller icon representing game based learning">
 
             <h3>Game Based Learning</h3>
@@ -61,7 +61,7 @@
         </article>
 
         <article class="focus-card">
-            <img src="AccessIconBold.png"
+            <img src="Home/AccessIconBold.png"
                  alt="Accessibility icon representing designing for all learners">
 
             <h3>Accessibility</h3>
@@ -79,14 +79,14 @@
             </ul>
         <div class="education-container">
             <article class="education-card">
-                <img src="MUBold.png"
+                <img src="Home/MUBold.png"
                         alt="University of Missouri representing graduate studies">
                 <h3>University of Missouri</h3>
                 <p>Master's Degree in Learning Technologies and Design (In Progress)</p>
             </article>
 
             <article class="education-card">
-                <img src="ODUBold.png"
+                <img src="Home/ODUBold.png"
                         alt="Ohio Dominican University representing undergraduate studies">   
                 <h3>Ohio Dominican University</h3>
                 <p>Bachelor of Science in Special Education (K-12) and Middle Childhood Education (4-9) Math and Social Studies</p>
@@ -101,14 +101,14 @@
          <article class="media-card">
             <h3>Introduction Video</h3>
            <video controls>
-                <source src="VideoIntroduction.mp4" type="video/mp4">
+                <source src="Home/VideoIntroduction.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </article>
 
         <article class="media-card">
             <h3>Resume</h3>
-            <a class="resume-link" href="SnyderResume.pdf" target="_blank">
+            <a class="resume-link" href="Home/SnyderResume.pdf" target="_blank">
              Download My Resume (PDF)
              </a>
         </article>
