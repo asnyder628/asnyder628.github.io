@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+     <!--
+  Name: Allison Snyder
+  Date: June 23, 2026
+  Course: Introduction to Web Design and Development
+  Description: About Page for Allison Snyder Portfolio.
+  -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Allison Snyder Portfolio</title>
+        <!-- Custom font used here -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <!-- Link to external CSS for styling -->
+      <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="shortcut icon" href="FooterIcons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <?php include 'header.php'; ?>
+<main>
+      <h1 class="about-me">Allison Snyder</h1>
+    <!-- About section -->
+    <section class="about-container">
+    <div class="about-image">
+        <img src="AllisonSnyderHeadshot.png" alt="Headshot of Allison Snyder" class="headshot">
+    </div>
+
+    <div class="about-text">
+        <h2>Hi, I'm Allison Snyder!</h2>
+        <p>I am a seventh-grade Intervention Specialist at Ohio Virtual Academy. I work with students with disabilities in an online learning environment and am passionate about creating accessible and engaging learning experiences for all learners. </p>
+        <p>My interest in educational technology grew from a desire to find creative ways for students to demonstrate their learning beyond traditional tests and worksheets. Through my work as an educator, I have seen how technology can increase accessibility for students with disabilities and provide alternative ways for learners to demonstrate mastery.</p>
+        <p>I am currently pursuing a master's degree in Learning Technologies and Design at the University of Missouri. My long-term goal is to work in educational technology and learning design, focusing on game-based learning, immersive learning experiences, and innovative approaches to assessment.</p>
+        <p class="ai-statement-2">This paragraph was created with assistance from ChatGPT.</p>
+    </div>
+</section>
+ <!--Focus Section-->
+<section class="focus">
+    <h2>Areas of Focus</h2>
+    <div class="focus-container">
+
+        <article class="focus-card">
+            <img src="BrowserIconBold.png"
+                 alt="Browser window icon representing learning design">
+
+            <h3>Learning Design</h3>
+
+            <p>Building meaningful, immersive learning experiences.</p>
+        </article>
+
+        <article class="focus-card">
+            <img src="GamingIconBold.png"
+                 alt="Game controller icon representing game based learning">
+
+            <h3>Game Based Learning</h3>
+
+            <p>Using gaming mechanics to create engaging content.</p>
+        </article>
+
+        <article class="focus-card">
+            <img src="AccessIconBold.png"
+                 alt="Accessibility icon representing designing for all learners">
+
+            <h3>Accessibility</h3>
+
+            <p>Designing for all learners in mind.</p>
+        </article>
+    </div>
+</section>
+    <!-- Education Section -->
+    <section class="education">
+        <h2>Education</h2>
+            <ul class="print-education">
+                 <li>University of Missouri — Master's Degree in Learning Technologies and Design (In Progress)</li>
+                 <li>Ohio Dominican University — Bachelor of Science in Special Education (K-12) and Middle Childhood Education (4-9) Math and Social Studies, Graduated 2022</li>
+            </ul>
+        <div class="education-container">
+            <article class="education-card">
+                <img src="MUBold.png"
+                        alt="University of Missouri representing graduate studies">
+                <h3>University of Missouri</h3>
+                <p>Master's Degree in Learning Technologies and Design (In Progress)</p>
+            </article>
+
+            <article class="education-card">
+                <img src="ODUBold.png"
+                        alt="Ohio Dominican University representing undergraduate studies">   
+                <h3>Ohio Dominican University</h3>
+                <p>Bachelor of Science in Special Education (K-12) and Middle Childhood Education (4-9) Math and Social Studies</p>
+                <p> Graduated: 2022</p>
+            </article>
+        </div>
+    </section>
+    <!-- Media Section-->
+    <section class="media">
+        <h2>More About Me</h2>
+        <div class="media-container">
+         <article class="media-card">
+            <h3>Introduction Video</h3>
+           <video controls>
+                <source src="VideoIntroduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+
+        <article class="media-card">
+            <h3>Resume</h3>
+            <a class="resume-link" href="SnyderResume.pdf" target="_blank">
+             Download My Resume (PDF)
+             </a>
+        </article>
+        </div>
+    </section>
+</main>
+<?php include 'footer.php'; ?>
+</body>
+</html>
