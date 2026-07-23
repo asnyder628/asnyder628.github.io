@@ -1250,6 +1250,41 @@ h1
     background-color: #D6C98E;
 }
 
+/* ======================
+   Mobile Tools List
+====================== */
+
+/* Hide on desktop/tablet */
+.mobile-tools {
+    display: none;
+}
+
+.mobile-tools ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.mobile-tools li {
+    margin-bottom: 1rem;
+}
+
+.mobile-tools li::marker {
+    color: #C9A227;
+    font-size: 1.2rem;
+}
+
+.mobile-tools strong {
+    color: #2F4F3E;
+    font-family: "Bona Nova", serif;
+}
+
+.mobile-tools p {
+        margin: 0.25rem 0 0 1rem;
+        padding: 0;
+        color: #2B2B2B;
+        line-height: 1.5;
+ }
+
 /* ===== Supporting Artifact Grid ===== */
 
 .artifact-grid {
@@ -1412,4 +1447,13 @@ h1
         padding: 1rem;
         border-left-width: 4px;
     }
+
+        .table-responsive {
+        display: none;
+    }
+
+    .mobile-tools {
+        display: block;
+    }
+
 }
